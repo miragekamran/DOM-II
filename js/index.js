@@ -81,6 +81,16 @@ titleColor.forEach(color => {
 })
 })
 
+// plays bus sound when img is clicked
+const firstImage = document.querySelector('div.container img');
+const audio = document.getElementById('sound');
+console.log(audio);
+console.log(firstImage);
+
+let sound = () => {
+    audio.play();
+}
+firstImage.addEventListener('contextmenu', sound);
 
 // dblclick and
 // prevent default action
