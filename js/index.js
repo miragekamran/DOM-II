@@ -13,11 +13,24 @@ navBars.forEach(nav => {
 });
 
 // key down
-const keyboardKey = document.querySelectorAll('p');
-keyboardKey.addEventListener('keydown', (event) => {
-    if (event.keyCode == 1) {
-        event.style.background = 'red';
-    } else {
-        event.style.background = '';
-    }
+// const keyboardKey = document.querySelectorAll('p');
+// console.log(keyboardKey)
+// keyboardKey.addEventListener('keydown', (event) => {
+//     if (event.keyCode == 1) {
+//         event.style.background = 'red';
+//     } else {
+//         event.style.background = '';
+//     }
+// })
+
+// focus and blur
+const focusNav = document.querySelectorAll('.nav a');
+console.log(focusNav)
+focusNav.forEach(nav => {
+    nav.addEventListener('focus', (event) => {
+    event.target.style.color = 'red';
+    })
+    nav.addEventListener('blur', (e) => {
+        e.target.style.color = 'blue';
+    })
 })
