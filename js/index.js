@@ -82,7 +82,7 @@ titleColor.forEach(color => {
 })
 
 
-// dblclick
+// dblclick and
 // prevent default action
 const stopRefresh = document.querySelectorAll('.nav-link');
 console.log(stopRefresh);
