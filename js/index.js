@@ -18,7 +18,7 @@ keyboardKey[1].addEventListener('keydown', (event) => {
     event.target.style.color = 'red';
 });
 
-// focus and blur
+// focus
 const focusNav = document.querySelectorAll('.nav a');
 console.log(focusNav)
 focusNav.forEach(nav => {
@@ -30,6 +30,7 @@ focusNav.forEach(nav => {
     })
 })
 
+// blur
 const focusH2 = document.querySelectorAll('.btn');
 console.log(focusH2)
 focusH2.forEach(t => {
