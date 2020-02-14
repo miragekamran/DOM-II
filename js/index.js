@@ -41,6 +41,26 @@ focusH2.forEach(t => {
     })
 })
 
+// resize
+const busImg = document.querySelector('.intro img');
+window.addEventListener('resize', () => {
+    busImg.src = 'https://www.coachusa.com/sites/default/files/inline-images/Coach-Bus-picture--Header.jpg';
+  })
+
+const img2 = document.querySelector('.img-content img');
+window.addEventListener('resize', () => {
+    img2.src = 'https://www.sciencenews.org/wp-content/uploads/2015/09/100315_coffee_opener_NEW_0.jpg';
+})
+
+const img3 = document.querySelector('.img-content .img-fluid rounded');
+window.addEventListener('resize', () => {
+    img3.src = 'https://si.wsj.net/public/resources/images/B3-DM067_RIGHTS_IM_20190319162958.jpg';
+})
+
+const img4 = document.querySelector('.content-destination img');
+window.addEventListener('resize', () => {
+    img4.src = 'https://imt.boatwizard.com/images/1/upload/BLM%20Image.png';
+})
 
 // stop propogation
 const bodyColor = document.querySelector('body');
