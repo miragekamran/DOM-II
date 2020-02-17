@@ -113,8 +113,6 @@ titleColor.forEach(color => {
 })
 })
 
-
-
 // dblclick 10, and
 // prevent default action
 const stopRefresh = document.querySelectorAll('.nav-link');
@@ -125,3 +123,16 @@ stopRefresh.forEach(navLink => {
     console.log('stop refresh');
     })
 })
+
+// stretch task
+// bounce the sign up buttons
+gsap.to('.btn', {duration: 5, y: 30, ease: 'bounce'});
+
+// rotate the title
+gsap.to('.logo-heading', {duration: 5, rotation: 360})
+
+// nav background and border changes
+gsap.to('.nav a', {duration: 5, x: 15, backgroundColor: '#09bd4e', padding: '8px', borderRadius: '18%', border: '1px solid #02451c', ease: 'bounce'});
+
+// header background change
+gspa.to('.main-navigation', {duration: 50, x: 2, backgroundColor: 'yellow'})
