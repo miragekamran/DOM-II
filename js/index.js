@@ -94,12 +94,17 @@ bodySelect.addEventListener("keydown", event => {
     // do something
   });
 
-  // drag
-let busImage = document.querySelector('header');
+// drag
+let busImage = document.querySelector('header h1');
 let dragBus = () => {
     busImage.style.backgroundImage = 'https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-pure-color-watercolor-graffiti-gradient-background-board-design-board-design-image_66713.jpg';
     busImage.style.color = 'blue';
 }
+
+// mouseenter
+busImage.addEventListener('mouseenter', () => {
+    busImage.style.fontFamily = 'Baloo';
+})
 
 busImg.addEventListener('drag', dragBus);
 
@@ -133,6 +138,3 @@ stopRefresh.forEach(navLink => {
     console.log('stop refresh');
     })
 })
-
-
-
