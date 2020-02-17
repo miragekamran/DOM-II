@@ -126,7 +126,7 @@ stopRefresh.forEach(navLink => {
 
 // stretch task
 // bounce the sign up buttons
-gsap.to('.btn', {duration: 5, y: 30, ease: 'bounce'});
+gsap.to('.btn', {duration: 5, y: 'random(-25, 25)', ease: 'bounce'});
 
 // rotate the title
 gsap.to('.logo-heading', {duration: 5, rotation: 360})
