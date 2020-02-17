@@ -82,10 +82,10 @@ bodySelect.addEventListener('copy', () => {
 
 
 // drag 8
-let busImage = document.querySelector('header h1');
+let busImage = document.querySelector('.main-navigation h1');
 let dragBus = () => {
     busImage.style.backgroundImage = 'https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-pure-color-watercolor-graffiti-gradient-background-board-design-board-design-image_66713.jpg';
-    busImage.style.color = 'blue';
+    busImage.style.color = 'orange';
 }
 
 // mouseenter 9
