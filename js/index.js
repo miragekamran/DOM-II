@@ -63,6 +63,46 @@ window.addEventListener('resize', () => {
     img4.src = 'https://imt.boatwizard.com/images/1/upload/BLM%20Image.png';
 })
 
+// wheel
+const bodySelect = document.querySelector('body');
+bodySelect.addEventListener('wheel', () => {
+    bodySelect.style.backgroundColor = 'lightblue';
+})
+
+// plays bus sound when img is clicked
+const firstImage = document.querySelector('div.container img');
+const audio = document.getElementById('sound');
+console.log(audio);
+console.log(firstImage);
+
+let sound = () => {
+    audio.play();
+}
+firstImage.addEventListener('contextmenu', sound);
+
+// copy (sends message when anything in the body is copied)
+bodySelect.addEventListener('copy', () => {
+    alert('Would you like us to send you more information?');
+})
+
+// keydown
+bodySelect.addEventListener("keydown", event => {
+    if (event.isComposing || event.keyCode === 229) {
+        console.log(bodySelect)
+      return;
+    }
+    // do something
+  });
+
+  // drag
+let busImage = document.querySelector('header');
+let dragBus = () => {
+    busImage.style.backgroundImage = 'https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-pure-color-watercolor-graffiti-gradient-background-board-design-board-design-image_66713.jpg';
+    busImage.style.color = 'blue';
+}
+
+busImg.addEventListener('drag', dragBus);
+
 // stop propogation
 const bodyColor = document.querySelector('body');
 console.log(bodyColor)
@@ -81,16 +121,7 @@ titleColor.forEach(color => {
 })
 })
 
-// plays bus sound when img is clicked
-const firstImage = document.querySelector('div.container img');
-const audio = document.getElementById('sound');
-console.log(audio);
-console.log(firstImage);
 
-let sound = () => {
-    audio.play();
-}
-firstImage.addEventListener('contextmenu', sound);
 
 // dblclick and
 // prevent default action
