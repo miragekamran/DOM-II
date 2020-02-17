@@ -132,7 +132,7 @@ gsap.to('.btn', {duration: 5, y: 30, ease: 'bounce'});
 gsap.to('.logo-heading', {duration: 5, rotation: 360})
 
 // nav background and border changes
-gsap.to('.nav a', {duration: 5, x: 15, backgroundColor: '#09bd4e', padding: '8px', borderRadius: '18%', border: '1px solid #02451c', ease: 'bounce'});
+gsap.to('.nav a', {duration: 5, x: 70, backgroundColor: '#09bd4e', padding: '8px', borderRadius: '18%', border: '1px solid #02451c', ease: 'bounce', stagger: 0.25});
 
 // header background change
-gsap.to('.main-navigation', {duration: 5, backgroundImage: '#c168ed'})
+gsap.to('.main-navigation', {duration: 5, backgroundColor: '#c168ed'})
