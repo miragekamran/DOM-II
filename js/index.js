@@ -1,6 +1,6 @@
 // Adding event listeners
 
-// mouse over
+// mouse over 1
 const navBars = document.querySelectorAll('.nav a');
 navBars.forEach(nav => {
     nav.addEventListener('mouseover', () => {
@@ -12,13 +12,7 @@ navBars.forEach(nav => {
     })
 });
 
-// key down
-const keyboardKey = document.querySelectorAll('p');
-keyboardKey[1].addEventListener('keydown', (event) => {
-    event.target.style.color = 'red';
-});
-
-// focus
+// focus 2
 const focusNav = document.querySelectorAll('.nav a');
 console.log(focusNav)
 focusNav.forEach(nav => {
@@ -30,7 +24,7 @@ focusNav.forEach(nav => {
     })
 })
 
-// blur
+// blur 3
 const focusH2 = document.querySelectorAll('.btn');
 console.log(focusH2)
 focusH2.forEach(t => {
@@ -42,7 +36,7 @@ focusH2.forEach(t => {
     })
 })
 
-// resize
+// resize 4
 const busImg = document.querySelector('.intro img');
 window.addEventListener('resize', () => {
     busImg.src = 'https://www.coachusa.com/sites/default/files/inline-images/Coach-Bus-picture--Header.jpg';
@@ -63,13 +57,13 @@ window.addEventListener('resize', () => {
     img4.src = 'https://imt.boatwizard.com/images/1/upload/BLM%20Image.png';
 })
 
-// wheel
+// wheel 5
 const bodySelect = document.querySelector('body');
 bodySelect.addEventListener('wheel', () => {
     bodySelect.style.backgroundColor = 'lightblue';
 })
 
-// plays bus sound when img is clicked
+// plays bus sound when img is clicked 6
 const firstImage = document.querySelector('div.container img');
 const audio = document.getElementById('sound');
 console.log(audio);
@@ -80,28 +74,21 @@ let sound = () => {
 }
 firstImage.addEventListener('contextmenu', sound);
 
-// copy (sends message when anything in the body is copied)
+// copy (sends message when anything in the body is copied) 7
 bodySelect.addEventListener('copy', () => {
     alert('Would you like us to send you more information?');
 })
 
-// keydown
-bodySelect.addEventListener("keydown", event => {
-    if (event.isComposing || event.keyCode === 229) {
-        console.log(bodySelect)
-      return;
-    }
-    // do something
-  });
 
-// drag
+
+// drag 8
 let busImage = document.querySelector('header h1');
 let dragBus = () => {
     busImage.style.backgroundImage = 'https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-pure-color-watercolor-graffiti-gradient-background-board-design-board-design-image_66713.jpg';
     busImage.style.color = 'blue';
 }
 
-// mouseenter
+// mouseenter 9
 busImage.addEventListener('mouseenter', () => {
     busImage.style.fontFamily = 'Baloo';
 })
@@ -128,7 +115,7 @@ titleColor.forEach(color => {
 
 
 
-// dblclick and
+// dblclick 10, and
 // prevent default action
 const stopRefresh = document.querySelectorAll('.nav-link');
 console.log(stopRefresh);
