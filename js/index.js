@@ -135,4 +135,4 @@ gsap.to('.logo-heading', {duration: 5, rotation: 360})
 gsap.to('.nav a', {duration: 5, x: 70, backgroundColor: '#09bd4e', padding: '8px', borderRadius: '18%', border: '1px solid #02451c', ease: 'bounce', stagger: 0.25});
 
 // header background change
-gsap.to('.main-navigation', {duration: 5, backgroundColor: '#c168ed'})
+gsap.to('.main-navigation, .footer', {duration: 5, backgroundColor: '#c168ed'})
